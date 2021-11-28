@@ -1,8 +1,6 @@
 package Checkpoin2;
 
-import java.awt.*;
-import java.util.Scanner;
-
+// dúvida de como colocar Scanner
 public class Principal {
     public static void main(String[] args) {
         Cliente c1 = new Cliente(1234,"Padaria da Maria","Padaria","Rua dos bobos, num 0",5.35,100);

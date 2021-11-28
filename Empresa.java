@@ -1,12 +1,14 @@
 package Checkpoin2;
 
 public class Empresa {
+ //atributos da classe
  private String nome_empresa;
  private String cod_produto;
  private String descricaoProduto;
  private double qtdadeProduto;
  private int qtdadeCliente;
 
+ // método construtor
  public Empresa(String nome_empresa, String cod_produto, String descricaoProduto, double qtdadeProduto, int qtdadeCliente) {
   this.nome_empresa = nome_empresa;
   this.cod_produto = cod_produto;
@@ -15,6 +17,7 @@ public class Empresa {
   this.qtdadeCliente = qtdadeCliente;
  }
 
+ //getters e setters
  public String getNome_empresa() {
   return nome_empresa;
  }
@@ -54,6 +57,6 @@ public class Empresa {
  public void setQtdadeCliente(int qtdadeCliente) {
   this.qtdadeCliente = qtdadeCliente;
  }
-
+// dúvida com estes métodos e relacionar as outras classes
 
 }

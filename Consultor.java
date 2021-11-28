@@ -1,12 +1,14 @@
 package Checkpoin2;
 
 public class Consultor {
+    //atributos da classe
     private int cod_consultor;
     private String nome_consultor;
     private double salario;
     private int novosClientes;
     private double comissao;
 
+    // método construtor
     public Consultor(int cod_consultor, String nome_consultor, double salario, int novosClientes, double comissao) {
         this.cod_consultor = cod_consultor;
         this.nome_consultor = nome_consultor;
@@ -15,6 +17,7 @@ public class Consultor {
         this.comissao = comissao;
     }
 
+    //getters e setters
     public int getCod_consultor() {
         return cod_consultor;
     }
@@ -55,6 +58,7 @@ public class Consultor {
         this.comissao = comissao;
     }
 
+    //métodos
     public void novosClientes (){
         System.out.println(this.nome_consultor + " fechou "+ this.novosClientes+ " novos clientes.");
     }

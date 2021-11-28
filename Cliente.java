@@ -1,6 +1,7 @@
 package Checkpoin2;
 
 public class Cliente {
+    //atributos da classe
     private int cod_cliente;
     private String nome_cliente;
     private String tipo_cliente;
@@ -8,6 +9,7 @@ public class Cliente {
     private double preco_cliente;
     private double qtdade_compra;
 
+    // método construtor
     public Cliente(int cod_cliente, String nome_cliente, String tipo_cliente, String endereco, double preco_cliente, double qtdade_compra) {
         this.cod_cliente = cod_cliente;
         this.nome_cliente = nome_cliente;
@@ -17,6 +19,7 @@ public class Cliente {
         this.qtdade_compra = qtdade_compra;
     }
 
+    //getters e setters
     public int getCod_cliente() {
         return cod_cliente;
     }
@@ -65,6 +68,7 @@ public class Cliente {
         this.qtdade_compra = qtdade_compra;
     }
 
+    //método
     public void comprar_gas () {
         System.out.println(this.nome_cliente+" comprou "+ this.qtdade_compra+". Valor total de: "+(this.preco_cliente*this.qtdade_compra));
     }

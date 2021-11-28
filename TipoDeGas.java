@@ -1,14 +1,17 @@
 package Checkpoin2;
 
 public class TipoDeGas {
+    //atributos da classe
     private String tipo_de_gas;
     private double kg_gas;
 
+    // método construtor
     public TipoDeGas(String tipo_de_gas, double kg_gas) {
         this.tipo_de_gas = tipo_de_gas;
         this.kg_gas = kg_gas;
     }
 
+    //getters e setters
     public String getTipo_de_gas() {
         return tipo_de_gas;
     }
@@ -25,6 +28,7 @@ public class TipoDeGas {
         this.kg_gas = kg_gas;
     }
 
+    //Método
     public void qtdade_gas (){
         System.out.println(this.tipo_de_gas + " possui " + this.kg_gas + " quilos.");
     }
