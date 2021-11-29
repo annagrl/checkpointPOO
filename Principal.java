@@ -1,5 +1,7 @@
 package Checkpoin2;
 
+import java.util.Scanner;
+
 // dúvida de como colocar Scanner
 public class Principal {
     public static void main(String[] args) {
@@ -8,11 +10,21 @@ public class Principal {
         TipoDeGas tipo2 = new TipoDeGas("Propano", 20000);
         Consultor cc1 = new Consultor(102030,"Paulo Vitor Pereira",5000,0,100);
 
+
         c1.comprar_gas();
         tipo1.qtdade_gas();
         tipo2.qtdade_gas();
         cc1.comissao();
         cc1.novosClientes();
+
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite nome da empresa: ");
+        String nome_empresa = entrada.nextLine();
+        System.out.println("Escolha um dos produtos: GLP ou Propano. ");
+        String descricaoProduto = entrada.nextLine();
+
+        System.out.println ("A empresa "+ nome_empresa + " vende  o produto "+ descricaoProduto);
+
     }
 }
 
