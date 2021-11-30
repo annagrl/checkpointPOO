@@ -93,7 +93,7 @@ public class Empresa {
  }
 
 
-// dúvida com estes métodos e relacionar as outras classes
+// métodos
 
  public void totalCliente ( ) {
   System.out.println("Total de clientes: " + this.qtdadeCliente + this.novosClientes);
