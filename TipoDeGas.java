@@ -1,6 +1,6 @@
 package Checkpoin2;
 
-public class TipoDeGas {
+public class TipoDeGas implements Comparable<TipoDeGas>{
     //atributos da classe
     private String tipo_de_gas;
     private double kg_gas;
@@ -31,5 +31,14 @@ public class TipoDeGas {
     //Método
     public void qtdade_gas (){
         System.out.println(this.tipo_de_gas + " possui " + this.kg_gas + " quilos.");
+    }
+
+    //CompareTo
+
+    @Override
+    public int compareTo(TipoDeGas o) {
+        if (this.kg_gas == o.kg_gas) return 0;
+        else if (this.kg_gas > o.kg_gas) return 1;
+        else return -1;
     }
 }

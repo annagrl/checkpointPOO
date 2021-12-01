@@ -25,6 +25,15 @@ public class Principal {
 
         System.out.println ("A empresa "+ nome_empresa + " vende  o produto "+ descricaoProduto);
 
+        // Qual tipo de gás precisa ser reabastecido de acordo com seu nível de gás
+        if (tipo1 .compareTo(tipo2) == 0){
+            System.out.println("Os tanques estão igualmente abastecidos ");
+        } else if (tipo1.compareTo(tipo2) == -1) {
+            System.out.println("Precisa reabastecer com GLP");
+        } else if (tipo1.compareTo(tipo2) == 1) {
+            System.out.println("Precisa reabastecer com Propano");
+        }
+
 
     }
 }

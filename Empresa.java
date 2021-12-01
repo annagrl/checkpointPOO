@@ -108,4 +108,8 @@ public class Empresa {
   System.out.println("Total de venda: " + this.comprar_gas);
  }
 
+ @Override
+ public String toString() {
+  return "Empresa: " + this.nome_empresa + "\n Possui: "+qtdadeCliente +"\n Fechou: " + this.novosClientes + " novos clientes." ;
+ }
 }
